@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sharon Lehman Designs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+  /* Hero */
+  #hero {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 96%;
+    height: 100%;
+    padding: 3%;
+    font-size: 14px;
+    background-image: url(images/dropShadow.jpg);
+    background-repeat: repeat-x;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+#hero-right {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    display: grid;
+    justify-items: center;
+}
+#hero-left {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#heroText {
+    clear: left;
+    margin-top: 69px;
+}
+.heroParagraph {
+    line-height: 27px;
+}
+.contact-links{
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-links a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+.contact-links a:hover{
+  font-weight: bold;
+  text-decoration: none;
+  color: #846C5B;
+  padding: 10px;
+}
+
+/*Contact form*/
+input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+
+        input[type=submit] {
+          padding: 12px 20px;
+          border: 1px solid #000;
+          color: #000;
+          background-color: #fff;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          border: 1px solid #000;
+          color: #000;
+          background-color: #F8F9FB;
+        }
+        .container {
+          border-radius: 5px;
+          background-color: #fff;
+          padding: 20px;
+          height: 90%;
+          display: inline-block;
+          width: 80%;
+          
+        }
+
+        @media screen and (max-width: 820px) {
+        #hero-left a{
+          font-size: 12px;
+        }
+        h1{
+          font-size: 44px;
+        }
+        }
+</style>
+
+<meta name="keywords" content="Interior Design, Shavertown, Pennsylvania, Designer, House design, contact, phone number, email">
+<meta name="description" content="Contact Sharon Lehman Designs to have your building redesigned.">
+</head>
+
+<body>
+<div id="outerWrapper">
+
+  <header class="header">
+    <a href="index.html" class="logo"><img src="..\Sharon Lehman Designs\images\Logomark.png" width="75" height="75" alt="Sharon Lehman Designs Logo"/></a>
+    <div class="header-right">
+      <a href="#">Services</a>
+      <a href="#">Client Testimonials</a>
+      <a href="#">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <div id="hero">
+  <div id="hero-left">
+    <h1>Contact</h1>
+    <p class="heroParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At aliquam tempus, sit leo diam nullam iaculis arcu, sit. Ultricies eget ornare lacus, hendrerit volutpat nisl, quis.</p>
+    <div class="contact-links">
+      <a href="#"><img src="images/email.png" width="20" height="auto" alt="Sharon Lehman Designs Logo">sharon.lehman@ymail.com</a>
+      <a href="#"><img src="images/telephone.png" width="20" height="auto" alt="Sharon Lehman Designs Logo">(570) 696-5088</a>
+    </div>
+    
+    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23971.531266057827!2d-75.94172985!3d41.321014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c517034b4c2435%3A0x8cd19cace81ec7de!2sShavertown%2C%20PA%2018708!5e0!3m2!1sen!2sus!4v1651758467579!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+  <div id="hero-right">
+    <div class="container">
+      <h3>Contact Us</h3>
+
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+  </div>
+</div>
+
+      <footer>
+        <div id="footerLogo"><img src="images/Logo.png" width="300" height="auto" alt="Sharon Lehman Designs Logo"> </div>
+        <div class="footerInfo">
+          <a href="#">(570) 696-5088</a>
+          <a href="#">sharon.lehman@ymail.com</a>
+        </div>
+      </footer>
+
+</div>
+</body>
+</html>
