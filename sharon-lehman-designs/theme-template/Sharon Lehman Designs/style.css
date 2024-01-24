@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* General */
+#outerWrapper {
+  width: 100%;
+  height: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+:root{
+  --main-brown: #846C5B;
+  --light-brown: #f8f0e3;
+  --main-blue: #163f56;
+  --light-blue: #c9d6ea;
+  --transition: all 0.3s linear;
+}
+
+body {
+    margin: 0px;
+}
+
+section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  height: auto;
+  background-image: url(images/dropShadow.jpg);
+  background-repeat: repeat-x;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 48px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 25px;
+  margin-top: 37px;
+  font-weight: 200;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+p{
+  font-size: 16px;
+}
+.button {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #000000;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Header */
+
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 3%;
+  }
+  
+  .header a {
+    float: left;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    padding: 0px 30px 0px 0px;
+  }
+  
+  .header a:hover {
+    color: var(--main-brown);
+  }
+  
+  .header a.active {}
+  
+  .header-right {
+    float: right;
+  }
+
+/* Footer */
+footer {
+    padding: 25px 3%;
+    background-color: #F8F0E3;
+    width: 94%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 14px;
+}
+#footerLogo {
+    grid-column: 1/2;
+}
+.footerInfo {
+    display: flex;
+    gap: 30px;
+    grid-column: 2/3;
+    justify-content: end;
+    align-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer a:link {
+    color: #000000;
+    text-decoration: none;
+}
+footer a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--main-brown);
+    text-decoration: none;
+}
+footer a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.circle-holder{
+  margin:  30px auto;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.circle-empty{
+  border: 1px solid var(--main-brown);
+  background-color: #fff;
+  border-radius: 15px;
+  height: 15px;
+  width: 15px;
+}
+
+.circle-empty:hover{
+  background-color: #F8F0E3;
+}
+
+.circle-filled{
+  border: 1px solid var(--main-brown);
+  background-color: var(--main-brown);
+  border-radius: 15px;
+  height: 15px;
+  width: 15px;
+}
+
+.next-btn, .prev-btn {
+  background: none;
+  border: none;
+  color: var(--main-brown);
+}
+
+.next-btn:hover, .prev-btn:hover {
+  background: none;
+  border: none;
+  color: var(--light-brown);
+}
+
+
+/* nav */
+nav {
+  background: #fff;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.links a {
+  text-decoration: none;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--main-blue);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--light-blue);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+.links a {
+  color: #000;
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+  
+}
+.links a:hover {
+  background: var(--main-blue);
+  color: var(--light-blue);
+  padding-left: 1.5rem;
+}
+.social-icons {
+  display: none;
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  list-style: none;
+}
+.show-links {
+  height: 10rem;
+}
+
+@media screen and (max-width: 870px) {
+  .header a {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  #footerLogo {
+    grid-row: 1/3;
+    grid-column: 1;
+}
+.footerInfo {
+    grid-row: 1/3;
+    grid-column: 2;
+    height: auto;
+    font-size: 18px;
+    flex-direction: column;
+    text-align: right;
+}
+  .header-right {
+    float: none;
+  }
+  .header a.logo {
+      padding: 0px 0px 30px 0px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sharon Lehman Designs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+/* Hero */
+ #hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    background-image: url(images/dropShadow.jpg);
+    background-repeat: repeat-x;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+#heroImage {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-image: url(images/heroImage.png);
+    background-repeat:no-repeat;
+
+}
+#heroTextHolder {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    padding: 5%;
+}
+#hero a:link {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #000000;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+#hero a:visited {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #000000;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+#hero a:hover {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #000000;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #F8F9FB;
+}
+#hero a:active {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #000000;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#heroText {
+    clear: left;
+    margin-top: 69px;
+    /* max-width: 500px; */
+}
+.heroParagraph {
+    line-height: 27px;
+    margin-bottom: 60px;
+}
+
+#hero a:link {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #000000;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+#hero a:visited {
+    border: 1px solid #000;
+    color: #000;
+}
+#hero a:hover {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #F8F9FB;
+}
+#hero a:active {
+    border: 1px solid #000;
+    color: #000;
+}
+
+/*services*/
+#services {
+    width: 100%;
+    margin: 0%;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    background-image: url(images/dropShadow.jpg);
+    background-repeat: repeat-x;
+}
+#servicesBoxesHolder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto 50px;
+    text-align: center;
+}
+.serviceBoxes {
+    width: 280px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    border: 1px solid #000000;
+    position: relative;
+    line-height: 34px;
+  
+}
+
+.serviceBoxes, a{
+  text-decoration: none;
+  color: #000;
+}
+
+.serviceBoxes:hover{
+  background-color: #c9d6ea;
+  color: var(--main-blue);
+  border-color: var(--main-blue);
+}
+.service-title{
+  margin-top: 15px;
+}
+/* Testimonials */
+#testimonialsWrapper {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#quote-outer{
+  display: flex;
+  width: 95%;
+  max-width: 1180px;
+  height: auto;
+  border: 1px solid #000000;
+  margin: 50px auto 0 auto;
+}
+
+#quote-holder{
+  display: flex;
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+#quote-inner{
+  margin: auto;
+  margin: 30px 0;
+  height: auto;
+}
+
+#quote-text{
+  font-size: 18px;
+  line-height: 2em;
+}
+
+#quote-name{
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#quote-icon{
+  margin: 10px;
+}
+
+/* Projects */
+#projects {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    clear: both;
+    background-image: url(images/dropShadow.jpg);
+    background-repeat: repeat-x;
+}
+#imageholder {
+    height: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.flipimage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 33.333%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+.flipimage img {
+    width: 100%;
+    height: auto;
+}
+/* Media Query */
+@media screen and (max-width: 885px) {
+  #heroImage {
+    grid-column: 3 / 3;    
+  }
+  #heroTextHolder {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    background-image: url(images/Hero-Mobile.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    color: #fff;
+}
+#hero{
+  gap: 0%;
+}
+#hero a:link {
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+#hero a:visited {
+    border: 1px solid #fff;
+    color: #fff;
+}
+#hero a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #846c5b70;
+}
+#hero a:active {
+    border: 1px solid #fff;
+    color: #fff;
+}
+  .flipimage {
+    display: block;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+}
+
+@media screen and (max-width: 1370px) {
+  #quoteIcon {
+    padding: 2%;
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+</style>
+<script type="text/javascript">
+  function MM_swapImgRestore() { //v3.0
+    var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+  }
+  function MM_preloadImages() { //v3.0
+    var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+      var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+      if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+  }
+  
+  function MM_findObj(n, d) { //v4.01
+    var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+      d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+    if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+    for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+    if(!x && d.getElementById) x=d.getElementById(n); return x;
+  }
+  
+  function MM_swapImage() { //v3.0
+    var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+     if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+  }
+  </script>
+
+<meta name="keywords" content="Interior Design, Shavertown, Pennsylvania, Designer, House design">
+<meta name="description" content="Sharon Lehman Design provides proffessional Interior Design to both residential and commercial buildings.">
+</head>
+
+<body>
+ <div id="outerWrapper">
+
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html"><img src="images/icons/logo-icon.svg" alt="logo icon" class="logo"></a>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        </div>
+    </nav>
+      
+    <div id="hero">
+		<div id="heroTextHolder">
+      <div id="heroText">
+        <h1>Interior Design Like No Other </h1>
+        <p class="heroParagraph">With a respect for various design styles, Sharon introduces elegant and comfortable ideas into new spaces while advocating for the clients’ 
+          expectations throughout the design process. With an eye for detail, she is an analytical problem solver enhancing spaces with functional and innovative results. </p>
+        <p><a href="#">Learn More</a></p>
+      </div>
+		</div>
+     <div id="heroImage"></div>
+    </div>
+    
+    <section>
+      <h2>Services</h2>
+      <div id="servicesBoxesHolder">
+        <a href="services.html">
+          <div class="serviceBoxes">
+            <img src="images/icons/interior-architecture.svg" width="100" height="100" alt=""/>
+            <h3 class="service-title">Interior<br> Architecture</h3> 
+          </div>
+        </a>
+        
+        <a  href="services.html">
+          <div class="serviceBoxes">
+          <img src="images/icons/space-planning.svg" width="100" height="100" alt=""/>
+          <h3 class="service-title">Space <br> Planning</h3>
+        </div></a>
+
+       <a href="services.html"><div class="serviceBoxes">
+          <img src="images/icons/furniture-design.svg" width="100" height="100" alt=""/>
+          <h3 class="service-title">Furniture <br> Design</h3>
+       </div></a>
+
+        <a href="services.html"><div class="serviceBoxes">
+          <img src="images/icons/construction-management.svg" width="100" height="100" alt=""/>
+          <h3 class="service-title">Construction <br> Management</h3>
+        </div></a>
+	  </div>
+  </section>
+
+  <section>
+    <h2>Client Testimonials</h2>
+    <div id="quote-outer">
+      <div id="quote-holder">
+      <img  src="images/icons/quotation-mark.svg" width="49" height="50" alt=""/>
+      <div id="quote-inner">
+        <p id="quote-text">I was always impressed with Sharon's quick response time and good communications skills. I felt very comfortable knowing she was managing a team of vendors and contractors to meet and exceed our needs </p>
+        <p id="quote-name">-Kristi Gunster</p>
+      </div>
+    </div>
+    </div>
+    <div class="circle-holder">
+      <button class="prev-btn"><i class="fas fa-chevron-left"></i></button> 
+      <button class="circle-empty"></button>
+      <button class="circle-empty"></button>
+      <button class="circle-empty"></button>
+      <button class="circle-empty"></button>
+      <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+	  
+      <div id="projects">
+        <h2>Projects</h2>
+        <div class="flipimage"><a href="projects.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','images/Frame-blue_01.jpg',1)"><img src="images/projects1.jpg" alt="" width="640" height="480" id="Image10"></a></div>
+        <div class="flipimage"><a href="projects.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/Frame-blue_02.jpg',1)"><img src="images/projects2.jpg" alt="" width="640" height="480" id="Image8"></a></div>
+        <div class="flipimage"><a href="projects.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','images/Frame-blue_03.jpg',1)"><img src="images/projects3.jpg" alt="" width="640" height="480" id="Image9"></a></div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/Frame-blue_02.jpg',1)"></a>    </div>
+
+
+      <footer>
+        <div id="footerLogo"><img src="images/Logo.png" width="300" height="auto" alt="Sharon Lehman Designs Logo"> </div>
+        
+        <div class="footerInfo">
+          <a href="#">(570) 696-5088</a>
+          <a href="#">sharon.lehman@ymail.com</a>
+        </div>
+      </footer>
+    </body>
+    <script src="app.js"></script>
+</body>
+</html>
